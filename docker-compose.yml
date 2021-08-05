@@ -1,0 +1,35 @@
+version: '3.1'
+
+services:
+  joomla:
+    image: joomla
+    restart: always
+    links:
+      - joomladb:mysql
+    ports:
+      - 9090:80
+    volumes:
+    - ./www:/var/www/html
+    environment:
+      JOOMLA_DB_HOST: joomladb
+      JOOMLA_DB_PASSWORD: password
+
+  joomladb:
+    image: mysql:5.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+    - ./mysql:/var/lib/mysql
+
+
+  phpmyadmin:
+    image:
+      corbinu/docker-phpmyadmin
+    links:
+      - joomladb:mysql
+    ports:
+    - 8181:80
+    environment:
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: password
