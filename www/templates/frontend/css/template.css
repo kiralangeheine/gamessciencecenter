@@ -1,0 +1,225 @@
+/* FRONTEND CSS
+*********************************************/
+
+html {
+	/* scrollbar fix (prevent ugly left pull for lower content sites) */
+	overflow-y: scroll;
+}
+header{
+	top: 2vh;
+	position: fixed;
+
+ }
+footer{
+	bottom: 2vh;
+	position: fixed;
+}
+.logo{
+	position: fixed;
+	margin-top: 4vh;
+	right: 2vw;
+}
+body {
+	font-family: "Hind Madurai", sans-serif;
+	font-size: 14px;
+	color: #313033;
+	background: #FFFEFD;
+}
+.contentwrapper{
+	margin-top: 10vh;
+	margin-bottom: 2vh;
+}
+p{
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 2vh;
+}
+.quote{
+	font-weight: 400;
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 2vh;
+	color:#FCCB00;
+}
+.orange{
+	color: #EB725C;
+}
+.violet{
+	color: #E1C9EB;
+}
+.green{
+	color: #385A57;
+}
+.yellow{
+	color:#FCCB00;
+}
+h1{
+	font-weight: 400;
+	font-size: 24px;
+	margin-bottom: 0.5vh;
+	margin-top: 2vh;
+	display: inline-block;
+}
+h2{
+	font-weight: 400;
+	font-size: 24px;
+	margin-bottom: 0.5vh;
+	display: inline-block;
+}
+h3{
+	font-weight: 500;
+	font-size: 12px;
+	margin-bottom: 0.5vh;
+	display: inline-block;
+}
+.bulletlist{
+	line-height: 3vw;
+	display: inline-block;
+}
+.home{
+	background: #FFFEFD;
+	color: #E1C9EB;
+}
+a{
+	text-decoration: none;
+	color: #EB725C;
+
+}
+/* COLUMNS***/
+
+.colfull{
+	display: block;
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+.colblock{
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	gap: 8vw;
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+
+.col1{
+	float: left;
+	max-width: 30rem;
+	display: block;
+}
+.col2{
+	float: right;
+	max-width: 30rem;
+	display: block;
+}
+.current.active{
+	margin-left: 1vw;
+}
+/* FooterNAVIGATION***/
+.footernavi li{
+	margin: 0 0 1vw 0;
+	list-style: none;
+}
+.footernavi a{
+	padding: 0 1vw 0 0;
+	font-weight: 400;
+}
+
+/* EXPLORENAVIGATION***/
+.contentnavi li{
+	margin: 0 0 1vw -1vw;
+	list-style: none;
+}
+.contentnavi a{
+	margin-left: 50vw;
+	padding: 0 1vw 0 1vw;
+	font-weight: 400;
+}
+
+/* TOURNAVIGATION***/
+.mainnavi li{
+	margin: 0 0 1vw 0;
+	list-style: none;
+
+}
+.mainnavi a{
+	padding: 0 1vw 0 0;
+	font-weight: 400;
+}
+/*CONTENT TYPES******/
+.contenttype_1col_text{
+	box-sizing: border-box;
+	margin: auto auto;
+	max-width: 65rem;
+	margin-bottom: 8vh;
+	margin-top: 2vh;
+}
+.contenttype_2col_text{
+	box-sizing: border-box;
+	margin: auto auto;
+	max-width: 65rem;
+	margin-bottom: 8vh;
+	margin-top: 2vh;
+}
+.contenttype_image_only{
+	margin: auto auto;
+	max-width: 65rem;
+	min-height: 60vh;
+	background-size: cover;
+	margin-bottom: 8vh;
+	margin-top: 2vh;
+}
+.contenttype_2col_text_3image{
+	box-sizing: border-box;
+	margin: auto auto;
+	max-width: 65rem;
+	margin-bottom: 8vh;
+	margin-top: 2vh;
+}
+.contenttype_2col_textleft_1image{
+	box-sizing: border-box;
+	margin: auto auto;
+	max-width: 65rem;
+	margin-bottom: 8vh;
+	margin-top: 2vh;
+}
+.contenttype_2col_textright_1image{
+	box-sizing: border-box;
+	margin: auto auto;
+	max-width: 65rem;
+	margin-bottom: 8vh;
+	margin-top: 2vh;
+}
+
+.contenttype_home{
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 40px;
+	margin: 40vh auto 10vh auto;
+	max-width: 65rem;
+}
+
+
+/* MEDIA QUERIES
+*********************************************/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query -> mobile first strategy */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* for higher resolutions (android and retina) */
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (max--moz-device-pixel-ratio: 1.5) {
+  
+}
